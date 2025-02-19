@@ -42,6 +42,7 @@
       background: rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     header h1 {
@@ -60,6 +61,7 @@
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
+      animation: slideIn 1s ease-in-out;
     }
 
     section h2 {
@@ -75,6 +77,7 @@
       border-radius: 10px;
       margin: 10px 0;
       overflow: hidden;
+      position: relative;
     }
 
     .skill {
@@ -84,16 +87,18 @@
       text-align: center;
       border-radius: 10px;
       background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      width: 0;
+      animation: fillBar 2s ease-in-out forwards;
     }
 
-    .html { width: 90%; }
-    .css { width: 85%; }
-    .js { width: 80%; }
-    .react { width: 75%; }
-    .git { width: 70%; }
-    .docker { width: 65%; }
-    .aws { width: 60%; }
-    .figma { width: 55%; }
+    .html { animation-delay: 0.5s; }
+    .css { animation-delay: 1s; }
+    .js { animation-delay: 1.5s; }
+    .react { animation-delay: 2s; }
+    .git { animation-delay: 2.5s; }
+    .docker { animation-delay: 3s; }
+    .aws { animation-delay: 3.5s; }
+    .figma { animation-delay: 4s; }
 
     /* Experiencia y Educación */
     .experience, .education {
@@ -108,6 +113,11 @@
       border-radius: 10px;
       flex: 1 1 calc(50% - 20px);
       box-sizing: border-box;
+      transition: transform 0.3s ease;
+    }
+
+    .experience-item:hover, .education-item:hover {
+      transform: scale(1.05);
     }
 
     .experience-item h3, .education-item h3 {
@@ -133,6 +143,11 @@
       flex: 1 1 calc(50% - 20px);
       box-sizing: border-box;
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: scale(1.05);
     }
 
     .project-item img {
@@ -147,10 +162,27 @@
       background: rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     footer p {
       margin: 5px 0;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fillBar {
+      from { width: 0; }
+      to { width: attr(data-width); }
     }
   </style>
 </head>
@@ -176,73 +208,7 @@
     <section id="skills">
       <h2>Habilidades</h2>
       <div class="skill-bar">
-        <div class="skill html">HTML - 90%</div>
+        <div class="skill html" data-width="90%">HTML - 90%</div>
       </div>
       <div class="skill-bar">
-        <div class="skill css">CSS - 85%</div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill js">JavaScript - 80%</div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill react">React - 75%</div>
-      </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section id="experience">
-      <h2>Experiencia</h2>
-      <div class="experience">
-        <div class="experience-item">
-          <h3>Desarrollador Web - Empresa XYZ</h3>
-          <p>Enero 2020 - Presente</p>
-          <p>Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas como React y Node.js.</p>
-        </div>
-        <div class="experience-item">
-          <h3>Diseñador UI/UX - Empresa ABC</h3>
-          <p>Junio 2018 - Diciembre 2019</p>
-          <p>Diseño de interfaces de usuario y experiencias de usuario para aplicaciones móviles y web.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Educación -->
-    <section id="education">
-      <h2>Educación</h2>
-      <div class="education">
-        <div class="education-item">
-          <h3>Licenciatura en Informática - Universidad XYZ</h3>
-          <p>2014 - 2018</p>
-        </div>
-        <div class="education-item">
-          <h3>Curso de Desarrollo Web - Plataforma ABC</h3>
-          <p>2019</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="projects">
-      <h2>Proyectos Destacados</h2>
-      <div class="projects">
-        <div class="project-item">
-          <img src="https://i.imgur.com/AA2GuOE.png" alt="Proyecto 1">
-          <h3>Plataforma de E-learning</h3>
-          <p>Desarrollo de una plataforma de aprendizaje en línea con funcionalidades avanzadas.</p>
-        </div>
-        <div class="project-item">
-          <img src="https://i.imgur.com/QZDndRj.png" alt="Proyecto 2">
-          <h3>Aplicación de Gestión de Tareas</h3>
-          <p>Aplicación web para la gestión de tareas con integración de IA.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer>
-      <p>Contacto: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
-      <p>Sígueme en <a href="https://github.com/tuusuario">GitHub</a></p>
-    </footer>
-  </div>
-</body>
-</html>
+        <div class="skill css"
