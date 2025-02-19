@@ -1,164 +1,248 @@
-<div align="center">
-  <h1 align="center">Hola, soy [Tu Nombre] 👋</h1>
-  <p align="center">Desarrollador Web | Diseñador UI/UX | Apasionado por la tecnología</p>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum de [Tu Nombre]</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      line-height: 1.6;
+    }
 
-<img src="https://i.imgur.com/J6SDy4i.png" alt="Banner">
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-## Sobre mí
+    h1, h2, h3 {
+      color: #ffd700;
+    }
 
-- 🚀 Desarrollador web con experiencia en tecnologías modernas.
-- 🎨 Diseñador UI/UX enfocado en la experiencia del usuario.
-- 🌱 Siempre aprendiendo y explorando nuevas tecnologías.
-- 💻 Amante del código abierto y colaborador activo en GitHub.
-- 📫 Contáctame: [tuemail@example.com](mailto:tuemail@example.com)
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
 
-<br>
+    a:hover {
+      text-decoration: underline;
+    }
 
-## Habilidades Técnicas
+    /* Encabezado */
+    header {
+      text-align: center;
+      padding: 50px 0;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Lenguajes y Frameworks</h3>
-      <div align="center">
-        <p>HTML, CSS, JavaScript, React, Node.js, Python, PHP</p>
-        <div class="skill-bar">
-          <div class="skill html">HTML</div>
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+    }
+
+    /* Secciones */
+    section {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+    }
+
+    /* Barras de habilidades */
+    .skill-bar {
+      background: #333;
+      border-radius: 10px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .skill {
+      height: 30px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    }
+
+    .html { width: 90%; }
+    .css { width: 85%; }
+    .js { width: 80%; }
+    .react { width: 75%; }
+    .git { width: 70%; }
+    .docker { width: 65%; }
+    .aws { width: 60%; }
+    .figma { width: 55%; }
+
+    /* Experiencia y Educación */
+    .experience, .education {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .experience-item, .education-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 calc(50% - 20px);
+      box-sizing: border-box;
+    }
+
+    .experience-item h3, .education-item h3 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .experience-item p, .education-item p {
+      margin: 5px 0;
+    }
+
+    /* Proyectos */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 calc(50% - 20px);
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .project-item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <h1>[Tu Nombre]</h1>
+      <p>Desarrollador Web | Diseñador UI/UX | Apasionado por la tecnología</p>
+    </header>
+
+    <!-- Sobre mí -->
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy un desarrollador web con experiencia en tecnologías modernas como HTML, CSS, JavaScript y más.
+        Me encanta crear soluciones digitales que sean funcionales y visualmente atractivas. Siempre estoy aprendiendo
+        y explorando nuevas tecnologías para mejorar mis habilidades.
+      </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <div class="skill-bar">
+        <div class="skill html">HTML - 90%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill css">CSS - 85%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill js">JavaScript - 80%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill react">React - 75%</div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience">
+      <h2>Experiencia</h2>
+      <div class="experience">
+        <div class="experience-item">
+          <h3>Desarrollador Web - Empresa XYZ</h3>
+          <p>Enero 2020 - Presente</p>
+          <p>Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas como React y Node.js.</p>
         </div>
-        <div class="skill-bar">
-          <div class="skill css">CSS</div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill js">JavaScript</div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill react">React</div>
+        <div class="experience-item">
+          <h3>Diseñador UI/UX - Empresa ABC</h3>
+          <p>Junio 2018 - Diciembre 2019</p>
+          <p>Diseño de interfaces de usuario y experiencias de usuario para aplicaciones móviles y web.</p>
         </div>
       </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">Herramientas y Plataformas</h3>
-      <div align="center">
-        <p>Git, Docker, AWS, Firebase, Figma, Photoshop</p>
-        <div class="skill-bar">
-          <div class="skill git">Git</div>
+    </section>
+
+    <!-- Educación -->
+    <section id="education">
+      <h2>Educación</h2>
+      <div class="education">
+        <div class="education-item">
+          <h3>Licenciatura en Informática - Universidad XYZ</h3>
+          <p>2014 - 2018</p>
         </div>
-        <div class="skill-bar">
-          <div class="skill docker">Docker</div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill aws">AWS</div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill figma">Figma</div>
+        <div class="education-item">
+          <h3>Curso de Desarrollo Web - Plataforma ABC</h3>
+          <p>2019</p>
         </div>
       </div>
-    </td>
-  </tr>
-</table>
+    </section>
 
-<br>
-
-## Experiencia Laboral
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Desarrollador Web - Empresa XYZ</h3>
-      <div align="center">
-        <p>Enero 2020 - Presente</p>
-        <p>Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas como React y Node.js.</p>
+    <!-- Proyectos -->
+    <section id="projects">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects">
+        <div class="project-item">
+          <img src="https://i.imgur.com/AA2GuOE.png" alt="Proyecto 1">
+          <h3>Plataforma de E-learning</h3>
+          <p>Desarrollo de una plataforma de aprendizaje en línea con funcionalidades avanzadas.</p>
+        </div>
+        <div class="project-item">
+          <img src="https://i.imgur.com/QZDndRj.png" alt="Proyecto 2">
+          <h3>Aplicación de Gestión de Tareas</h3>
+          <p>Aplicación web para la gestión de tareas con integración de IA.</p>
+        </div>
       </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">Diseñador UI/UX - Empresa ABC</h3>
-      <div align="center">
-        <p>Junio 2018 - Diciembre 2019</p>
-        <p>Diseño de interfaces de usuario y experiencias de usuario para aplicaciones móviles y web.</p>
-      </div>
-    </td>
-  </tr>
-</table>
+    </section>
 
-<br>
-
-## Educación
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Licenciatura en Informática - Universidad XYZ</h3>
-      <div align="center">
-        <p>2014 - 2018</p>
-      </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">Curso de Desarrollo Web - Plataforma ABC</h3>
-      <div align="center">
-        <p>2019</p>
-      </div>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-## Proyectos Destacados
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Proyecto 1: Plataforma de E-learning</h3>
-      <div align="center">
-        <a href="#" target="_blank"><img src="https://i.imgur.com/AA2GuOE.png" width="400" alt="Proyecto 1"></a>
-        <p>Desarrollo de una plataforma de aprendizaje en línea con funcionalidades avanzadas.</p>
-      </div>
-    </td>
-    <td width="50%">
-      <h3 align="center">Proyecto 2: Aplicación de Gestión de Tareas</h3>
-      <div align="center">
-        <a href="#" target="_blank"><img src="https://i.imgur.com/QZDndRj.png" width="400" alt="Proyecto 2"></a>
-        <p>Aplicación web para la gestión de tareas con integración de IA.</p>
-      </div>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<div align="center">
-  <h3 align="center">📊 GitHub Analytics</h3>
-  <p align="center">
-    <a href="https://github.com/tuusuario">
-      <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=tuusuario&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-      <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=tuusuario&layout=compact&langs_count=8&theme=algolia"/>
-    </a>
-  </p>
-</div>
-
-<style>
-  .skill-bar {
-    background: #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-    overflow: hidden;
-  }
-
-  .skill {
-    height: 30px;
-    line-height: 30px;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-  }
-
-  .html { width: 90%; background: #e44d26; }
-  .css { width: 85%; background: #264de4; }
-  .js { width: 80%; background: #f0db4f; color: #333; }
-  .react { width: 75%; background: #61dbfb; }
-  .git { width: 70%; background: #f34f29; }
-  .docker { width: 65%; background: #2496ed; }
-  .aws { width: 60%; background: #ff9900; }
-  .figma { width: 55%; background: #a259ff; }
-</style>
+    <!-- Pie de página -->
+    <footer>
+      <p>Contacto: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+      <p>Sígueme en <a href="https://github.com/tuusuario">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
