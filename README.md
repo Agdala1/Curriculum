@@ -1,214 +1,97 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum de [Tu Nombre]</title>
-  <style>
-    /* Estilos generales */
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      line-height: 1.6;
-    }
+<div align="center">
+  <h1>Hola, soy [Tu Nombre] 👋</h1>
+  <p>Desarrollador Web | Diseñador UI/UX | Apasionado por la tecnología</p>
+</div>
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+<p align="center">
+  <img src="https://i.imgur.com/J6SDy4i.png" alt="Banner" width="100%">
+</p>
 
-    h1, h2, h3 {
-      color: #ffd700;
-    }
+---
 
-    a {
-      color: #ffd700;
-      text-decoration: none;
-    }
+## 🚀 Sobre mí
 
-    a:hover {
-      text-decoration: underline;
-    }
+¡Hola! Soy un desarrollador web con experiencia en tecnologías modernas como **HTML**, **CSS**, **JavaScript** y más. Me encanta crear soluciones digitales que sean funcionales y visualmente atractivas. Siempre estoy aprendiendo y explorando nuevas tecnologías para mejorar mis habilidades.
 
-    /* Encabezado */
-    header {
-      text-align: center;
-      padding: 50px 0;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
+- 🌱 **Actualmente aprendiendo**: React y Node.js.
+- 💬 **Pregúntame sobre**: Desarrollo web, diseño UI/UX y tecnologías modernas.
+- 📫 **Contáctame**: [tuemail@example.com](mailto:tuemail@example.com)
+- ⚡ **Dato curioso**: ¡Me encanta el café y la música lo-fi para programar!
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+---
 
-    header p {
-      font-size: 1.2rem;
-      margin: 10px 0 0;
-    }
+## 🛠️ Habilidades Técnicas
 
-    /* Secciones */
-    section {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      animation: slideIn 1s ease-in-out;
-    }
+| Habilidad         | Nivel        |
+|-------------------|--------------|
+| **HTML**          | ⭐⭐⭐⭐⭐       |
+| **CSS**           | ⭐⭐⭐⭐         |
+| **JavaScript**    | ⭐⭐⭐⭐         |
+| **React**         | ⭐⭐⭐          |
+| **Node.js**       | ⭐⭐⭐          |
+| **Git**           | ⭐⭐⭐⭐         |
+| **Figma**         | ⭐⭐⭐⭐         |
 
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #ffd700;
-      display: inline-block;
-    }
+---
 
-    /* Barras de habilidades */
-    .skill-bar {
-      background: #333;
-      border-radius: 10px;
-      margin: 10px 0;
-      overflow: hidden;
-      position: relative;
-    }
+## 💼 Experiencia Laboral
 
-    .skill {
-      height: 30px;
-      line-height: 30px;
-      color: #fff;
-      text-align: center;
-      border-radius: 10px;
-      background: linear-gradient(90deg, #ff7e5f, #feb47b);
-      width: 0;
-      animation: fillBar 2s ease-in-out forwards;
-    }
+### **Desarrollador Web** - Empresa XYZ
+**Enero 2020 - Presente**  
+- Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas como **React** y **Node.js**.
+- Colaboración en equipos ágiles para la entrega de proyectos.
 
-    .html { animation-delay: 0.5s; }
-    .css { animation-delay: 1s; }
-    .js { animation-delay: 1.5s; }
-    .react { animation-delay: 2s; }
-    .git { animation-delay: 2.5s; }
-    .docker { animation-delay: 3s; }
-    .aws { animation-delay: 3.5s; }
-    .figma { animation-delay: 4s; }
+### **Diseñador UI/UX** - Empresa ABC
+**Junio 2018 - Diciembre 2019**  
+- Diseño de interfaces de usuario y experiencias de usuario para aplicaciones móviles y web.
+- Creación de prototipos y wireframes en **Figma**.
 
-    /* Experiencia y Educación */
-    .experience, .education {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+---
 
-    .experience-item, .education-item {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 10px;
-      flex: 1 1 calc(50% - 20px);
-      box-sizing: border-box;
-      transition: transform 0.3s ease;
-    }
+## 🎓 Educación
 
-    .experience-item:hover, .education-item:hover {
-      transform: scale(1.05);
-    }
+### **Licenciatura en Informática** - Universidad XYZ
+**2014 - 2018**  
+- Enfoque en desarrollo de software y bases de datos.
 
-    .experience-item h3, .education-item h3 {
-      margin: 0 0 10px;
-      font-size: 1.5rem;
-    }
+### **Curso de Desarrollo Web** - Plataforma ABC
+**2019**  
+- Aprendizaje de tecnologías web modernas como **HTML5**, **CSS3** y **JavaScript**.
 
-    .experience-item p, .education-item p {
-      margin: 5px 0;
-    }
+---
 
-    /* Proyectos */
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+## 🌟 Proyectos Destacados
 
-    .project-item {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 10px;
-      flex: 1 1 calc(50% - 20px);
-      box-sizing: border-box;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
+### **Plataforma de E-learning**
+![Proyecto 1](https://i.imgur.com/AA2GuOE.png)  
+Desarrollo de una plataforma de aprendizaje en línea con funcionalidades avanzadas.  
+[🔗 Ver más](#)
 
-    .project-item:hover {
-      transform: scale(1.05);
-    }
+### **Aplicación de Gestión de Tareas**
+![Proyecto 2](https://i.imgur.com/QZDndRj.png)  
+Aplicación web para la gestión de tareas con integración de IA.  
+[🔗 Ver más](#)
 
-    .project-item img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+---
 
-    /* Pie de página */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      margin-top: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
+## 📊 Estadísticas de GitHub
 
-    footer p {
-      margin: 5px 0;
-    }
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tuusuario&show_icons=true&theme=dark" alt="Estadísticas de GitHub">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tuusuario&layout=compact&theme=dark" alt="Lenguajes más usados">
+</p>
 
-    /* Animaciones */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+---
 
-    @keyframes slideIn {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
+## 📫 Contáctame
 
-    @keyframes fillBar {
-      from { width: 0; }
-      to { width: attr(data-width); }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Encabezado -->
-    <header>
-      <h1>[Tu Nombre]</h1>
-      <p>Desarrollador Web | Diseñador UI/UX | Apasionado por la tecnología</p>
-    </header>
+¡No dudes en contactarme si tienes alguna pregunta o quieres colaborar en un proyecto!  
+📧 **Email**: [tuemail@example.com](mailto:tuemail@example.com)  
+🐦 **GitHub**: [@tuusuario](https://github.com/tuusuario)  
+💼 **LinkedIn**: [Tu Nombre](https://linkedin.com/in/tuperfil)
 
-    <!-- Sobre mí -->
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        ¡Hola! Soy un desarrollador web con experiencia en tecnologías modernas como HTML, CSS, JavaScript y más.
-        Me encanta crear soluciones digitales que sean funcionales y visualmente atractivas. Siempre estoy aprendiendo
-        y explorando nuevas tecnologías para mejorar mis habilidades.
-      </p>
-    </section>
+---
 
-    <!-- Habilidades -->
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <div class="skill-bar">
-        <div class="skill html" data-width="90%">HTML - 90%</div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill css"
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=tuusuario&label=Visitas&color=blue&style=flat" alt="Visitas">
+</p>
